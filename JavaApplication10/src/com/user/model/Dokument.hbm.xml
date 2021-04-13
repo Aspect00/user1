@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 12.04.2021 20:56:31 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.user.model.Dokument" table="dokument" catalog="user" optimistic-lock="version">
+        <id name="idDokument" type="java.lang.Integer">
+            <column name="idDokument" />
+            <generator class="identity" />
+        </id>
+        <property name="title" type="string">
+            <column name="title" length="45" />
+        </property>
+        <property name="past" type="string">
+            <column name="past" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
